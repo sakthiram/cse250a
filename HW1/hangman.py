@@ -125,8 +125,8 @@ def update_prob_given_evidence(correct_guesses, incorrect_guesses):
 			letter_exists = 0.0
 			for wcp_letter in wcp[0]:
 				if lcp[0] == wcp_letter:
-					#letter_exists = 1.0
-					letter_exists += 1.0
+					letter_exists = 1.0
+					#letter_exists += 1.0
 			lcp[3] += letter_not_yet_guessed*letter_exists*wcp[3]
 
 		total_prob += lcp[3]
@@ -141,7 +141,7 @@ if __name__ == "__main__":
 
 	init_WCP()
 	init_LCP()
-	correct_guesses = [['D',0], ['I',3]]
-	incorrect_guesses = []
+	correct_guesses = [['A',0],['S',4]]
+	incorrect_guesses = ['I']
 	update_prob_given_evidence(correct_guesses, incorrect_guesses)
 	guess_next_letter()	
