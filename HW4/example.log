@@ -1,0 +1,5 @@
+DEBUG:root:This message should go to the log file
+DEBUG:root:123
+DEBUG:root:123
+DEBUG:root:This message should go to the log file 1
+DEBUG:root:123
