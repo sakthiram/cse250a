@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 from numpy.linalg import inv
 
 x = []
-x0 = -3
+x0 = 2
 for i in range(6):
 	if i == 0:
 		x.append(x0)
